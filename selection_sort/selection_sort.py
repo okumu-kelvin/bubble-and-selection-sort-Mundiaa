@@ -8,8 +8,8 @@ def selection_sort(arr):
                 min_index = j #Swap the found minimum element with the first element of the unsorted part
                 # This places the smallest element at its correct sorted position
 
-                arr[j], arr[min_index] = arr[min_index], arr[j]
-        return arr
+            arr[i], arr[min_index] = arr[min_index], arr[i]
+    return arr
 
 # Example usage:
 my_list = [64, 25, 12, 22, 11, 8]
@@ -21,5 +21,5 @@ selection_sort(another_list)
 print("Sorted array: ", another_list)
 
 #Expected Output:
-#Sorted array:  [64, 25, 12, 22, 11, 8]
-#Sorted array:  [5, 3, 8, 4, 2]
+#Sorted array:  [8, 11, 12, 22, 25, 64]
+#Sorted array:  [2, 3, 4, 5, 8]

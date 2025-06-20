@@ -2,7 +2,7 @@ def bubble_sort(unsorted_list):
     # TODO: Implement bubble sort
     n = len(unsorted_list)
     for i in range(n):
-            # Inner loop for comparisons and swaps within each pass
+        # Inner loop for comparisons and swaps within each pass
 
         for j in range(0, n - i - 1):
             # The -i-1 ensures that already sorted elements at the end are not re-compared

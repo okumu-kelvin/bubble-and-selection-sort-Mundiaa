@@ -8,7 +8,7 @@ def selection_sort(arr):
                 min_index = j #Swap the found minimum element with the first element of the unsorted part
                 # This places the smallest element at its correct sorted position
 
-            arr[i], arr[min_index] = arr[min_index], arr[i]
+        arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 
 # Example usage:

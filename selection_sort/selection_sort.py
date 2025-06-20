@@ -9,7 +9,7 @@ def selection_sort(arr):
                 # This places the smallest element at its correct sorted position
 
                 arr[j], arr[min_index] = arr[min_index], arr[j]
-
+        return arr
 
 # Example usage:
 my_list = [64, 25, 12, 22, 11, 8]

@@ -2,6 +2,7 @@ def bubble_sort(unsorted_list):
     # TODO: Implement bubble sort
     n = len(unsorted_list)
     for i in range(n):
+        swapped = False
         # Inner loop for comparisons and swaps within each pass
 
         for j in range(0, n - i - 1):
@@ -10,6 +11,11 @@ def bubble_sort(unsorted_list):
             if unsorted_list[j] > unsorted_list[j + 1]:
                 # Swap if elements are in the wrong order
                 unsorted_list[j], unsorted_list[j + 1] = unsorted_list[j + 1], unsorted_list[j]
+                swapped = True
+
+    #If no swaps occurred in the inner loop, the array is sorted
+        if not swapped:
+            break
     return unsorted_list
 
 # Example usage:
